@@ -1,43 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="data:image/jpeg;base64,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" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <title>𝔸𝕟𝕫 𝕡𝕝𝕒𝕪𝕖𝕣 ⏭</title>
+</head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+</body>
+
 </html>
